@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #20201e;
+}
+
+.caja{
+    background-color: #6ed;
+    width: 100px;
+    height: 80px;
+    margin: 1em;
+    position: relative;
+    left: 0;
+    transition-duration: .5s;
+    transition-property: left;
+
+}
+
+.parent:hover > .caja{
+    background-color: #195aa5;
+    left: 1200px;
+}
+
+.caja:first-child{
+    transition-timing-function: linear;
+}
+
+.caja:nth-child(2){
+    transition-timing-function: ease;
+}
+
+
+.caja:nth-child(3){
+    transition-timing-function: ease-in;
+}
+
+
+.caja:nth-child(4){
+    transition-timing-function: ease-out;
+}
+
+
+.caja:nth-child(5){
+    transition-timing-function: ease-in-out;
+}

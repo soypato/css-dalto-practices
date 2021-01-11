@@ -1,0 +1,32 @@
+@media screen and (min-width: 1000px){
+    header{
+        grid-template-columns: 200px 1fr 200px;
+    }
+
+    
+    nav{
+        visibility: visible;
+        grid-area: 2 / -1;
+        font-size: .8em;
+
+}
+
+    nav > a{
+        visibility: visible;
+        color: #fff;
+        text-decoration: none;
+        margin: 1em;
+        font-size: 1em;
+}
+
+    nav> a:hover{
+        color: #6ed;
+}
+
+    article{
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+    }
+
+    
+}

@@ -1,0 +1,155 @@
+@media screen and (min-width: 300px){
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+html, body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4;
+    font-size: 1.5em
+    
+}
+
+/* header */
+
+header{
+    display: grid;
+    padding: 1em;
+    background-color: #20201e;
+    color: #fff;
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-rows: 5px 1fr 5px;
+    position: fixed;
+    width: 100%;
+    
+    
+}
+
+h1{
+    grid-area: 2 / 1;
+    font-size: .8em;
+    position: relative;
+    bottom: .1em;
+}
+
+h1:hover{
+    color: #6ed;
+}
+
+nav, nav > a{
+    visibility: hidden;
+
+}
+
+
+/*body*/
+
+article{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    
+
+}
+
+article > *{
+    grid-column: 2; 
+    min-width: 0;
+}
+
+article > h2{
+    font-size: 3em;
+    margin: 2.5em 0 0 0;
+}   
+
+.up{
+    font-size: 1em;
+}
+
+article > p{
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 1em 0;
+}
+
+article > figure{
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+article > figure > figcaption{
+    font-size: .9em;
+}
+
+img{
+    width: 100%;
+    border-radius: 1em;
+
+}
+
+/* aside */
+
+aside{
+    display: grid;
+    grid-template-areas: 30px 1fr 30px;
+}
+
+aside > .gridredes{
+    grid-area: 1 / 2;
+}
+
+.redes{
+    display: grid;
+    margin: 10em;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    
+}
+
+
+
+.redes > img{
+    max-width: 200px;
+}
+
+.iglogo{
+    width: 110px;
+    padding: 5em;
+    position: relative;
+    left: 15em;
+
+}
+
+.twlogo{
+    padding: 7em;
+    width: 150px;  
+    position: relative;  
+    left: 10.9em;
+}
+
+
+
+.redes > h3{
+    font-size: 3em;
+    position: relative;
+    top: 1.5em;
+    left: .4em;
+}
+
+.redes > a{
+    grid-area: 2 / 1;
+    font-size: 5em;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    left: .2em;
+}
+
+.redes > a:hover{
+    color: #6ed;
+}
+
+ /* comments */

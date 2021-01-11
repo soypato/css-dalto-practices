@@ -1,0 +1,106 @@
+    @media only screen and (min-width: 800px) {
+
+    :root{
+        --primary-color: #a044c7;
+    }
+
+
+    html{
+        font-size: 62.5%;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    header{
+        background-color: var(--primary-color);
+        padding: 1em;
+    }
+
+    header:hover{
+        background-color: #ffffff;
+        transition: 1s;
+    }
+
+    main{
+        padding: 1em;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1200px;        
+    }
+
+    h1{
+        display: inline-block;
+        width: 100%;
+        font-size: 3em;
+        margin-left: 1em; 
+        color: #fff;;
+    }
+
+    h1:hover{
+        color: var(--primary-color);
+        transition: 1s;
+    }
+
+
+    article{
+        margin: 0 5em;
+        margin: 1em;
+        border: .2em #e9e9e4 solid; 
+        border-radius: .5em;
+    }
+
+
+
+    h2{
+        font-size: 2em;
+        padding: 1em 0 0 1.3em;
+
+    }
+    
+    p{
+        text-align: justify;
+        font-size: 1.5em;
+        margin: 1.7em;
+    }
+
+
+    aside{
+        margin: 0 5em;
+        margin: 1em;
+        border: .2em #e9e9e4 solid; 
+        border-radius: .5em;
+        display: flex;
+        flex-direction: column;
+        width: 5000px;
+    }
+    footer {
+        height: 45px;
+        background-color: var(--primary-color);
+        color: #fff;;
+        font-size: 1.2em;
+        line-height: 3.5em;
+    }
+    footer > p{
+        text-align: center;
+
+    }
+
+    }
+
+    .ad{
+        border: .2em #eeab53 dotted;
+        margin: 3em;
+        height: 20em;
+    }
+
+    .ad > p{
+        text-align: center;
+        
+
+    }

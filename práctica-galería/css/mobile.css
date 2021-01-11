@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body{
+    background-color: #20201e;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.parent{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+    grid-auto-columns: auto;
+}
+
+img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+div:first-child{
+    grid-column: 1 / 4;
+}
+
+img:hover{
+    
+}

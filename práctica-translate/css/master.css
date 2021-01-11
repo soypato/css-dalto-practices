@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    filter: contrast(30);
+    background-color: #fff;
+}
+
+.circle{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #20201e;
+    clip-path: circle(50% at 50% 50%);
+    margin: 1em;
+    filter: blur(20);
+}
+
+.circle:first-child{
+    animation: mov 2s alternate infinite;
+}
+
+
+@keyframes mov{
+    0%{
+        transform: translate(0px);
+    }
+
+    100%{
+        transform: translate(130px);
+    }
+}
+
